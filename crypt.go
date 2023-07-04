@@ -24,8 +24,8 @@ var salt = []byte{
 
 func Main() error {
 	var args struct {
-		Encrypt []string
-		Decrypt []string
+		Encrypt []string `placeholder:"PATH"`
+		Decrypt []string `placeholder:"PATH"`
 	}
 	p := arg.MustParse(&args)
 
